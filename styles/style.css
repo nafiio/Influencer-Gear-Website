@@ -4,10 +4,10 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin: 0px;
+  
 }
-.display-none{
-    display: none;
+.display-none {
+  display: none;
 }
 main {
   max-width: 1200px;
@@ -60,7 +60,7 @@ main > section {
 }
 .banner-title {
   font-weight: 700;
-  font-size: 3.25rem;
+  font-size: 3rem;
   color: rgba(58, 58, 58, 1);
 }
 .banner-subtitle {
@@ -79,16 +79,24 @@ main > section {
   color: white;
 }
 .banner-image {
-  max-width: 440px;
+  justify-content: end;
+  outline: 2px solid red;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
   background-image: url("/images/Circle\ design.svg");
+  background-position: right;
 }
 
 /* sponsors companies style */
 .sponsors-companies {
   border: 2px solid aqua;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1110px;
   height: 100px;
   margin: 50px auto;
@@ -101,7 +109,7 @@ main > section {
 }
 .collection-card-title {
   font-weight: 600;
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   color: rgba(58, 58, 58, 1);
 }
 .card-container {
@@ -201,16 +209,23 @@ main > section {
   .banner {
     flex-direction: column-reverse;
   }
+  .banner-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: rgba(58, 58, 58, 1);
+  }
   .banner-info {
+    text-align: center;
     justify-content: center;
+    
   }
   .banner-image {
-    width: 80%;
+    margin: 0 auto;
   }
 
   .sponsors-companies {
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
     margin-top: 50px;
     justify-content: center;
   }
@@ -225,6 +240,17 @@ main > section {
     margin-bottom: 50px;
     text-align: center;
   }
+  .featured-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgba(10, 8, 38, 1);
+}
+.footer-title {
+  margin: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+}
 }
 
 /*  Responsive Media Query for Tablet */

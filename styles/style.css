@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0px;
+}
+.display-none{
+    display: none;
 }
 main {
   max-width: 1200px;
@@ -76,7 +80,7 @@ main > section {
 }
 .banner-image {
   max-width: 440px;
-  background-image: url("/images/Circle design.svg");
+  background-image: url("/images/Circle\ design.svg");
 }
 
 /* sponsors companies style */
@@ -201,7 +205,7 @@ main > section {
     justify-content: center;
   }
   .banner-image {
-    width: 100%;
+    width: 80%;
   }
 
   .sponsors-companies {

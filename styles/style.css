@@ -20,14 +20,8 @@ main>section{
   display: flex;
 }
 
-.btn-primary{
-    width: 200px;
-    height: 45px;
-    border-radius: 40px;
-    border: none;
-    background-color: rgba(224, 44, 109, 1);
-    color: white;
-}
+
+
 /* navbar style */
 .navbar {
   border: 1px solid red;
@@ -68,9 +62,17 @@ main>section{
   font-size: 1rem;
   color: rgba(58, 58, 58, 1);
 }
+
+.btn-primary{
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+}
 .banner-image {
   max-width: 440px;
-  margin: 0 50px;
   background-image: url("/images/Circle design.svg");
 }
 
@@ -131,6 +133,36 @@ main>section{
         font-size: 1rem;
         color: rgba(120, 120, 133, 1);
     }
+    /* feature product related style */
+.feature-container{
+    
+}
+.featured-info{
+    width:100%;
+    margin-left: 100px;
+    justify-content: center;
+}
+.featured-title{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: rgba(10, 8, 38, 1);
+}
+.featured-desc{
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgba(108, 108, 108, 1);
+}
+.btn-secondary{
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+}
+.feature-img{
+    width: 100%;
+}
     
 /* Responsive Media Query for mobile device */
 @media screen and (max-width:576px) {
@@ -160,6 +192,14 @@ main>section{
         grid-template-columns: repeat(1,1fr);
         
     }
+    .feature-container {
+        flex-direction: column-reverse;
+    }
+    .featured-info{
+        margin-left: 0px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
 }
 
 /*  Responsive Media Query for Tablet */
@@ -173,10 +213,18 @@ main>section{
     }
     .sponsors-companies{
         grid-template-columns: repeat(3,1fr);
-        gap: 25px;
+        gap: 25px;        
     }
     .card-container{
         grid-template-columns: repeat(2,1fr);
         
+    }
+    .feature-container {
+        flex-direction: column-reverse;
+    }
+    .featured-info{
+        margin-left: 0px;
+        margin-bottom: 50px;
+        text-align: center;
     }
 }

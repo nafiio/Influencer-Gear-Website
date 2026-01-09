@@ -29,7 +29,6 @@ main > section {
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid red;
   align-items: center;
   justify-content: space-between;
   margin-top: 87px;
@@ -80,7 +79,6 @@ main > section {
 }
 .banner-image {
   justify-content: end;
-  outline: 2px solid red;
   position: relative;
   overflow-x: hidden;
   width: 100%;
@@ -92,7 +90,6 @@ main > section {
 
 /* sponsors companies style */
 .sponsors-companies {
-  border: 2px solid aqua;
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
@@ -104,7 +101,6 @@ main > section {
 
 /* popualr collection related style */
 .collection-card-container {
-  border: 2px solid tomato;
   justify-items: center;
 }
 .collection-card-title {
@@ -183,7 +179,6 @@ main > section {
   background-color: rgba(10, 8, 38, 1);
 }
 .footer-container {
-  border: 2px solid aqua;
   padding: 50px;
   text-align: center;
 }
@@ -198,6 +193,11 @@ main > section {
   font-weight: 700;
   font-size: 14px;
   color: rgba(217, 219, 225, 1);
+}
+.footer-icon{
+  border: 5px solid tomato;
+  
+
 }
 /* Responsive Media Query for mobile device */
 @media screen and (max-width: 576px) {
@@ -253,6 +253,17 @@ main > section {
 }
 }
 
+
+.icon{
+  background-color: bisque;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+
 /*  Responsive Media Query for Tablet */
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .navbar {
@@ -261,6 +272,14 @@ main > section {
   .banner {
     flex-direction: column-reverse;
   }
+  .banner-image {
+  justify-content: center;
+  background-position: center;
+}
+.banner-info{
+  text-align: center;
+  justify-items: center;
+}
   .sponsors-companies {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;

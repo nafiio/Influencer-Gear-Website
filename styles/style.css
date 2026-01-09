@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* shared style */
+.displayflex {
+  display: flex;
+}
+
+.btn-primary{
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+}
+/* navbar style */
+.navbar {
+  border: 1px solid red;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 87px;
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.nav-links {
+  justify-items: center;
+  list-style: none;
+}
+.nav-item {
+  margin-right: 34px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgba(58, 58, 58, 1);
+}
+
+/* banner related style */
+.banner {
+  margin-top: 80px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 3.25rem;
+  color: rgba(58, 58, 58, 1);
+}
+.banner-subtitle {
+  max-width: 510px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(58, 58, 58, 1);
+}
+.banner-image {
+  max-width: 440px;
+  margin: 0 50px;
+  background-image: url("/images/Circle design.svg");
+}
+
+/* sponsors companies style */
+
